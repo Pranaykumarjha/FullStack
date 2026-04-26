@@ -25,12 +25,23 @@ export const getAllCompanions = async ({ limit = 10, page = 1, subject, topic }:
     } else if (topic) {
         query = query.or(`topic.ilike.%${topic}%,name.ilike.%${topic}%`);
     }
-    query = query.range((page-1)*limit,page*limit-1);
-    const {data:companions,error}=await query ;
-    if(error)
-    {
+    query = query.range((page - 1) * limit, page * limit - 1);
+    const { data: companions, error } = await query;
+    if (error) {
         throw new Error(error.message)
     }
     return companions;
 
+}
+
+export const getCompanion = async (id: string) => { 
+    const supabase = createSupaBaseClient();
+    const { data, error } = await supabase
+        .from('companions')
+        .select()
+        .eq('id', id);
+    if (error) {
+        throw new Error(error.message)
+    }
+    return data[0];
 }

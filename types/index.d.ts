@@ -34,6 +34,13 @@ interface CreateCompanion {
   style: string;
   duration: number;
 }
+enum CallStatus {
+  INACTIVE="INACTIVE",
+  "CONNECTING"="CONNECTING",
+  "ACTIVE"="ACTIVE",
+  "FINISHED"="FINISHED",
+ 
+}
 
 interface GetAllCompanions {
   limit?: number;
@@ -64,7 +71,6 @@ interface Avatar {
   height: number;
   className?: string;
 }
-
 
 interface SavedMessage {
   role: "user" | "system" | "assistant";
