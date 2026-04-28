@@ -1,17 +1,25 @@
 'use client'
-import React from 'react'
-import { useState } from 'react'
+import React, { use } from 'react'
+import { useState, useEffect } from 'react'
 import { cn, getSubjectColor } from '@/lib/utils'
 
 enum CallStatus {
-  INACTIVE = 'INACTIVE',
-  CONNECTING = 'CONNECTING',
-  ACTIVE = 'ACTIVE',
-  FINISHED = 'FINISHED',
+    INACTIVE = 'INACTIVE',
+    CONNECTING = 'CONNECTING',
+    ACTIVE = 'ACTIVE',
+    FINISHED = 'FINISHED',
 }
 
 const CompanionComponent = ({ companionId, subject, topic, name, userName, userImage, style, voice }: CompanionComponentProps) => {
     const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
+    useEffect(() => {
+        const onCallStart = () => setCallStatus(CallStatus.ACTIVE);
+
+        const onCallEnd = () => setCallStatus(CallStatus.FINISHED);
+
+        const onMessage = {}
+    }, []);
+
     return (
         <section className="flex flex-col h-[70vh]">
             <section className="flex gap-8 max-sm:flex-col">
