@@ -1,7 +1,7 @@
 'use client'
 import React, { use } from 'react'
 import { useState, useEffect, useRef } from 'react'
-import { cn, getSubjectColor } from '@/lib/utils'
+import { cn, configureAssistant, getSubjectColor } from '@/lib/utils'
 import { vapi } from '@/lib/vapi.sdk'
 import Image from 'next/image'
 import Lottie, { LottieRefCurrentProps } from 'lottie-react'
@@ -72,10 +72,13 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             clientMessages: ['transcript'],
             serverMessages: [],
         };
-        //vapi.start()
+        //@ts-expect-error
+        vapi.start(configureAssistant(voice, style), assistantOverrides);
     }
 
     const handleDisconnect = async () => {
+        setCallStatus(CallStatus.FINISHED);
+        vapi.stop();
     }
 
     return (
@@ -93,7 +96,7 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
                             <Image src={`/icons/${subject}.svg`} alt={subject} width={150} height={150} className="max-sm:w-fit" />
                             <div
                                 className={cn(
-                                    'absolute transition-opacity duration-1000',
+                                    'absolute transition-opacity duration-1000 inset-0 flex items-center justify-center',
                                     callStatus === CallStatus.ACTIVE ? 'opacity-100' : 'opacity-0'
                                 )}
                             >
