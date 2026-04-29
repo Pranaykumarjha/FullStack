@@ -195,10 +195,10 @@ body {
   }
 
   .companion-avatar {
-    @apply size-[300px] flex items-center justify-center rounded-lg max-sm:size-[100px] mt-4 relative;
+    @apply size-[300px] flex items-center justify-center rounded-lg max-sm:size-[100px] mt-4;
   }
   .companion-lottie {
-    @apply size-[300px] max-sm:size-[100px] z-50;
+    @apply size-[300px] max-sm:size-[100px];
   }
 
   .user-section {
