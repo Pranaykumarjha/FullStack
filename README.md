@@ -1,194 +1,205 @@
-# Converso 🧠✨  
+# 🧠 Converso — AI Learning Platform
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black)
-![React](https://img.shields.io/badge/React-19-blue)
-![AI](https://img.shields.io/badge/AI-VAPI%20%2B%20OpenAI-green)
-![Auth](https://img.shields.io/badge/Auth-Clerk-purple)
-![Database](https://img.shields.io/badge/Database-Supabase-3ECF8E)
-![Monitoring](https://img.shields.io/badge/Monitoring-Sentry-red)
-![Deployment](https://img.shields.io/badge/Deployed-Vercel-blue)
-
----
-
-🚀 Built a real-time AI teaching platform where users learn through **interactive AI companions (voice + text)**  
-🚀 Combines conversational AI, real-time streaming, and personalized learning journeys  
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" />
+  <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/OpenAI-AI-green?style=for-the-badge&logo=openai" />
+  <img src="https://img.shields.io/badge/VAPI-Voice%20AI-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Clerk-Auth-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase" />
+  <img src="https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel" />
+</p>
 
 ---
 
-## 🔥 Key Features
-
-- 🏠 Homepage with **Popular Companions & Recent Sessions**  
-- 📚 Companion Library with **search & filters**  
-- ➕ Create custom companions (topic, style, personality)  
-- 🎧 Real-time AI sessions with **voice interaction (VAPI)**  
-- 📊 My Journey dashboard (stats, history, progress)  
-- 🔐 Secure authentication using Clerk  
-- 💳 Subscription system (future feature)  
-- 🛠 Error monitoring with Sentry  
+<p align="center">
+  🚀 Real-time AI teaching platform with <b>voice + text companions</b> <br/>
+  🎯 Personalized learning through interactive AI sessions
+</p>
 
 ---
 
-## 🛠 Tech Stack
-
-**Frontend**
-- Next.js 16  
-- React 19  
-- Tailwind CSS  
-- Radix UI  
-
-**Backend / Database**
-- Supabase (Auth + Database)  
-
-**Authentication**
-- Clerk  
-
-**AI / Voice**
-- VAPI AI  
-- OpenAI  
-
-**Validation**
-- react-hook-form  
-- zod  
-
-**Monitoring**
-- Sentry  
-
-**Deployment**
-- Vercel  
-
----
-
-## 🏗 Architecture
-
-
-Client (Next.js + React)
-↓
-Clerk Authentication
-↓
-Supabase (Database + Auth)
-↓
-VAPI AI → OpenAI
-↓
-Sentry Monitoring
-
-
----
-
-## 🌐 Live Demo  
+## 🌐 Live Demo
 
 <p align="center">
   <a href="https://full-stack-m551fscdg-pranay-kumar-jhas-projects.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🚀%20Launch%20App-Live%20Demo-blue?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/🚀%20Launch%20App-Live-blue?style=for-the-badge" />
   </a>
 </p>
 
 ---
 
-💡 **Test Flow**
+## ✨ Features
 
-- Sign in using Clerk  
-- Explore companions on the homepage  
-- Create your own AI companion  
-- Start a real-time voice session  
-- Track progress in **My Journey** dashboard  
-
----
-
-## 📸 Preview
-
-### 🏠 Homepage
-<img width="1880" height="1206" alt="Homepage" src="https://github.com/user-attachments/assets/b4bf7be8-3d18-4548-a2e0-86c5abbe07e4" />
+* 🏠 **Dynamic Homepage** — Popular companions & recent sessions
+* 📚 **Companion Library** — Search, filter, explore
+* ➕ **Custom AI Companions** — Define personality & teaching style
+* 🎧 **Real-Time Voice Sessions** (VAPI)
+* 📊 **Progress Dashboard** — Track learning journey
+* 🔐 **Authentication** — Clerk
+* 💳 **Subscriptions (Planned)**
+* 🛠 **Monitoring** — Sentry
 
 ---
 
-### 📚 Companion Library
-<img width="1901" height="907" alt="Library" src="https://github.com/user-attachments/assets/f718d919-7f3b-43c2-a231-82167427127f" />
+## 🛠 Tech Stack
+
+### ⚡ Frontend
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-UI-38B2AC?logo=tailwind-css)
+![Radix](https://img.shields.io/badge/Radix-UI-black)
+
+### 🔧 Backend & Services
+
+![Supabase](https://img.shields.io/badge/Supabase-DB-3ECF8E?logo=supabase)
+![Clerk](https://img.shields.io/badge/Clerk-Auth-orange)
+![OpenAI](https://img.shields.io/badge/OpenAI-AI-green?logo=openai)
+![VAPI](https://img.shields.io/badge/VAPI-Voice-purple)
+
+### 📊 Monitoring & Deployment
+
+![Sentry](https://img.shields.io/badge/Sentry-Monitoring-red?logo=sentry)
+![Vercel](https://img.shields.io/badge/Vercel-Hosting-black?logo=vercel)
 
 ---
 
-### 📊 My Journey Dashboard
-<img width="1883" height="1381" alt="Dashboard" src="https://github.com/user-attachments/assets/67072d9b-be2e-421a-811f-01fb044551a6" />
+## 🏗 System Architecture
+
+```text
+Client (Next.js)
+   ↓
+Clerk Authentication
+   ↓
+Supabase (DB)
+   ↓
+VAPI (Voice AI)
+   ↓
+OpenAI (LLM)
+   ↓
+Sentry (Monitoring)
+```
 
 ---
 
-### 🎧 Companion Session
-<img width="1882" height="965" alt="Session" src="https://github.com/user-attachments/assets/1141aa17-a670-4d3e-8821-834031763441" />
+## 📸 Preview (Compact)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b4bf7be8-3d18-4548-a2e0-86c5abbe07e4" width="45%" />
+  <img src="https://github.com/user-attachments/assets/f718d919-7f3b-43c2-a231-82167427127f" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/67072d9b-be2e-421a-811f-01fb044551a6" width="45%" />
+  <img src="https://github.com/user-attachments/assets/1141aa17-a670-4d3e-8821-834031763441" width="45%" />
+</p>
 
 ---
 
 ## 🧠 How It Works
 
-- User signs in via Clerk  
-- Creates or selects an AI companion  
-- Starts a real-time session (voice/text)  
-- VAPI streams responses powered by OpenAI  
-- Session data stored in Supabase  
-- Progress tracked in dashboard  
+1. User signs in via Clerk
+2. Selects or creates an AI companion
+3. Starts a real-time voice/text session
+4. VAPI streams responses via OpenAI
+5. Data stored in Supabase
+6. Progress tracked in dashboard
 
 ---
 
-## ⚡ Challenges Faced
+## ⚡ Challenges Solved
 
-- Real-time AI streaming + UI synchronization  
-- Managing voice interactions via VAPI  
-- Handling auth + DB consistency (Clerk + Supabase)  
-- Optimizing UI for smooth conversational experience  
-
----
-
-## 🚀 Future Improvements
-
-- 💳 Stripe subscription system  
-- 🧠 Persistent AI memory  
-- 🌍 Multi-language support  
-- 🎮 Gamification (XP, streaks)  
-- 📱 Mobile optimization  
+* ⚡ Real-time AI streaming + UI sync
+* 🎙 Voice interaction handling (VAPI)
+* 🔐 Dual auth system (Clerk + Supabase)
+* 🎨 Smooth conversational UI/UX
 
 ---
 
-## ⚙️ How to Run Locally
+## 🚀 Future Scope
 
-### 1️⃣ Clone the Repository
+* 💳 Stripe subscriptions
+* 🧠 Persistent AI memory
+* 🌍 Multi-language support
+* 🎮 Gamification (XP, streaks)
+* 📱 Mobile-first optimization
+
+---
+
+## ⚙️ Local Setup
+
+### 1. Clone
 
 ```bash
 git clone https://github.com/your-username/converso.git
 cd converso
-2️⃣ Install Dependencies
+```
+
+### 2. Install
+
+```bash
 npm install
-3️⃣ Setup Environment Variables
+```
 
-Create a .env.local file in the root directory:
+### 3. Environment Variables
 
+Create `.env.local`:
+
+```env
 # Supabase
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_key
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
 
-# VAPI AI
-NEXT_PUBLIC_VAPI_WEB_TOKEN=your_vapi_token
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-# Clerk Auth
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
-CLERK_SECRET_KEY=your_clerk_secret
+# VAPI
+NEXT_PUBLIC_VAPI_WEB_TOKEN=
 
 # Sentry (optional)
-SENTRY_DSN=your_sentry_dsn
-4️⃣ Configure Services
-Clerk
-Create an app at https://clerk.com
-Enable authentication providers (Google, Email, etc.)
-Add your local URL: http://localhost:3000
-Supabase
-Create a project at https://supabase.com
-Set up required tables (users, sessions, companions)
-VAPI AI
-Generate a web token
-Configure assistant + OpenAI provider
-5️⃣ Run Development Server
+SENTRY_DSN=
+```
+
+### 4. Run
+
+```bash
 npm run dev
+```
 
-Open in browser:
+➡ http://localhost:3000
 
-http://localhost:3000
-6️⃣ Build for Production
+---
+
+### 🏁 Production Build
+
+```bash
 npm run build
 npm start
+```
+
+---
+
+## 💡 Quick Test Flow
+
+* Sign in
+* Explore companions
+* Create your own AI tutor
+* Start voice session
+* Track progress
+
+---
+
+## ⭐ Why This Project Stands Out
+
+* Real-time AI + Voice (not just chat UI)
+* Full-stack production-ready architecture
+* Strong UX focus for learning systems
+* Resume-worthy SaaS with scalability potential
+
+---
+
+<p align="center">
+  Made with ⚡ + AI
+</p>
