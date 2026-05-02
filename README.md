@@ -83,7 +83,7 @@ Sentry (Monitoring)
 
 ---
 
-## 📸 Preview (Compact)
+## 📸 Preview 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b4bf7be8-3d18-4548-a2e0-86c5abbe07e4" width="45%" />
